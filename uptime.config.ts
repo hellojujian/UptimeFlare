@@ -34,18 +34,18 @@ const workerConfig = {
             expectedCodes: [200],
             // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
             timeout: 10000,
-            // [OPTIONAL] headers to be sent
-            headers: {
-                'User-Agent': 'Uptimeflare',
-                Authorization: 'Bearer YOUR_TOKEN_HERE',
-            },
-            // [OPTIONAL] body to be sent
-            body: 'Hello, world!',
-            // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-            responseKeyword: '',
-            // [OPTIONAL] if specified, the check will run in your specified region,
-            // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
-            checkLocationWorkerRoute: '',
+            // // [OPTIONAL] headers to be sent
+            // headers: {
+            //     'User-Agent': 'Uptimeflare',
+            //     Authorization: 'Bearer YOUR_TOKEN_HERE',
+            // },
+            // // [OPTIONAL] body to be sent
+            // body: 'Hello, world!',
+            // // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
+            // responseKeyword: '',
+            // // [OPTIONAL] if specified, the check will run in your specified region,
+            // // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
+            // checkLocationWorkerRoute: '',
         },
         {
             // `id` should be unique, history will be kept if the `id` remains constant
@@ -64,18 +64,18 @@ const workerConfig = {
             expectedCodes: [200],
             // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
             timeout: 10000,
-            // [OPTIONAL] headers to be sent
-            headers: {
-                'User-Agent': 'Uptimeflare',
-                Authorization: 'Bearer YOUR_TOKEN_HERE',
-            },
-            // [OPTIONAL] body to be sent
-            body: 'Hello, world!',
-            // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-            responseKeyword: '',
-            // [OPTIONAL] if specified, the check will run in your specified region,
-            // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
-            checkLocationWorkerRoute: '',
+            // // [OPTIONAL] headers to be sent
+            // headers: {
+            //     'User-Agent': 'Uptimeflare',
+            //     Authorization: 'Bearer YOUR_TOKEN_HERE',
+            // },
+            // // [OPTIONAL] body to be sent
+            // body: 'Hello, world!',
+            // // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
+            // responseKeyword: '',
+            // // [OPTIONAL] if specified, the check will run in your specified region,
+            // // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
+            // checkLocationWorkerRoute: '',
         },
         // Example TCP Monitor
         // {
@@ -90,20 +90,20 @@ const workerConfig = {
         //     timeout: 5000,
         // },
     ],
-    notification: {
-        // [Optional] apprise API server URL
-        // if not specified, no notification will be sent
-        appriseApiServer: "https://apprise.example.com/notify",
-        // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
-        // if not specified, no notification will be sent
-        recipientUrl: "tgram://bottoken/ChatID",
-        // [Optional] timezone used in notification messages, default to "Etc/GMT"
-        timeZone: "Asia/Shanghai",
-        // [Optional] grace period in minutes before sending a notification
-        // notification will be sent only if the monitor is down for N continuous checks after the initial failure
-        // if not specified, notification will be sent immediately
-        gracePeriod: 5,
-    },
+    // notification: {
+    //     // [Optional] apprise API server URL
+    //     // if not specified, no notification will be sent
+    //     appriseApiServer: "https://apprise.example.com/notify",
+    //     // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
+    //     // if not specified, no notification will be sent
+    //     recipientUrl: "tgram://bottoken/ChatID",
+    //     // [Optional] timezone used in notification messages, default to "Etc/GMT"
+    //     timeZone: "Asia/Shanghai",
+    //     // [Optional] grace period in minutes before sending a notification
+    //     // notification will be sent only if the monitor is down for N continuous checks after the initial failure
+    //     // if not specified, notification will be sent immediately
+    //     gracePeriod: 5,
+    // },
     callbacks: {
         onStatusChange: async (
             env: any,
