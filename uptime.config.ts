@@ -3,8 +3,8 @@ const pageConfig = {
     title: "Jujian's Status Page",
     // Links shown at the header of your status page, could set `highlight` to `true`
     links: [
-        { link: 'https://www.meipian.cn', label: 'meipian' },
-        { link: 'https://www.jianpian.cn/', label: 'jianpian' },
+        // { link: 'https://www.meipian.cn', label: 'meipian' },
+        { link: 'https://hellojujian.com/', label: 'blog' },
         //{ link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
     ],
 }
@@ -19,17 +19,17 @@ const workerConfig = {
         // Example HTTP Monitor
         {
             // `id` should be unique, history will be kept if the `id` remains constant
-            id: 'meipian_monitor',
+            id: 'hellojujian_monitor',
             // `name` is used at status page and callback message
-            name: 'Page Monitor',
+            name: 'hellojujian',
             // `method` should be a valid HTTP Method
             method: 'GET',
             // `target` is a valid URL
-            target: 'https://www.meipian.cn',
+            target: 'https://hellojujian.com/',
             // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
             tooltip: 'This is a tooltip for this monitor',
             // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-            statusPageLink: 'https://www.meipian.cn',
+            statusPageLink: 'https://hellojujian.com',
             // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
             expectedCodes: [200],
             // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
@@ -47,36 +47,36 @@ const workerConfig = {
             // // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
             // checkLocationWorkerRoute: '',
         },
-        {
-            // `id` should be unique, history will be kept if the `id` remains constant
-            id: 'jianpian_monitor',
-            // `name` is used at status page and callback message
-            name: 'Page Monitor',
-            // `method` should be a valid HTTP Method
-            method: 'GET',
-            // `target` is a valid URL
-            target: 'https://www.jianpian.cn',
-            // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-            tooltip: 'This is a tooltip for this monitor',
-            // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-            statusPageLink: 'https://www.jianpian.cn',
-            // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-            expectedCodes: [200],
-            // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-            timeout: 10000,
-            // // [OPTIONAL] headers to be sent
-            // headers: {
-            //     'User-Agent': 'Uptimeflare',
-            //     Authorization: 'Bearer YOUR_TOKEN_HERE',
-            // },
-            // // [OPTIONAL] body to be sent
-            // body: 'Hello, world!',
-            // // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-            // responseKeyword: '',
-            // // [OPTIONAL] if specified, the check will run in your specified region,
-            // // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
-            // checkLocationWorkerRoute: '',
-        },
+        // {
+        //     // `id` should be unique, history will be kept if the `id` remains constant
+        //     id: 'jianpian_monitor',
+        //     // `name` is used at status page and callback message
+        //     name: 'jianpian',
+        //     // `method` should be a valid HTTP Method
+        //     method: 'GET',
+        //     // `target` is a valid URL
+        //     target: 'https://www.jianpian.cn',
+        //     // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+        //     tooltip: 'This is a tooltip for this monitor',
+        //     // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+        //     statusPageLink: 'https://www.jianpian.cn',
+        //     // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+        //     expectedCodes: [200],
+        //     // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+        //     timeout: 10000,
+        //     // // [OPTIONAL] headers to be sent
+        //     // headers: {
+        //     //     'User-Agent': 'Uptimeflare',
+        //     //     Authorization: 'Bearer YOUR_TOKEN_HERE',
+        //     // },
+        //     // // [OPTIONAL] body to be sent
+        //     // body: 'Hello, world!',
+        //     // // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
+        //     // responseKeyword: '',
+        //     // // [OPTIONAL] if specified, the check will run in your specified region,
+        //     // // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
+        //     // checkLocationWorkerRoute: '',
+        // },
         // Example TCP Monitor
         // {
         //     id: 'test_tcp_monitor',
